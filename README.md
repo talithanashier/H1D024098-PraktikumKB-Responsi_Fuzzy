@@ -2,7 +2,7 @@
 
 * **Nama**: Talitha Nashier
 * **NIM**: H1D024098
-* **Shift KRS**: C
+* **Shift Baru**: C
 
 ---
 
