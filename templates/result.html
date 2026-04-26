@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Analisis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<section class="page">
+  <div class="panel glass result">
+    <span class="badge">✅ Hasil Analisis Fuzzy Mamdani</span>
+
+    <div class="icon result-{{ color_class }}">{{ icon }}</div>
+    <h2 class="result-{{ color_class }}">{{ status }}</h2>
+    <p>{{ desc }}</p>
+
+    <div class="gauge-box">
+      <div class="gauge-label">
+        <span>Rendah</span>
+        <span>Ideal</span>
+        <span>Tinggi</span>
+      </div>
+
+      <div class="bmi-gauge">
+        <div class="gauge-pointer" style="left: {{ pointer }}%;"></div>
+      </div>
+
+      <p class="bmi-score">BMI kamu: <b>{{ bmi }}</b></p>
+    </div>
+
+    <div class="result-grid">
+      <div class="mini-card">
+        <h3>📏 Data Tubuh</h3>
+        <p>BB: {{ bb }} kg</p>
+        <p>TB: {{ tb }} cm</p>
+        <p>Umur: {{ umur }} tahun</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>🏃 Aktivitas</h3>
+        <p>{{ aktivitas }}</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>💡 Saran</h3>
+        <p>{{ advice }}</p>
+      </div>
+    </div>
+
+    <div class="fuzzy-box">
+      <h3>🧠 Derajat Keanggotaan Fuzzy</h3>
+
+      <div class="fuzzy-row">
+        <span>Belum Ideal</span>
+        <div class="fuzzy-track">
+          <div style="width: {{ belum * 100 }}%"></div>
+        </div>
+        <b>{{ belum }}</b>
+      </div>
+
+      <div class="fuzzy-row">
+        <span>Kurang Ideal</span>
+        <div class="fuzzy-track">
+          <div style="width: {{ kurang * 100 }}%"></div>
+        </div>
+        <b>{{ kurang }}</b>
+      </div>
+
+      <div class="fuzzy-row">
+        <span>Ideal</span>
+        <div class="fuzzy-track">
+          <div style="width: {{ ideal * 100 }}%"></div>
+        </div>
+        <b>{{ ideal }}</b>
+      </div>
+
+      <div class="fuzzy-row">
+        <span>Tidak Ideal</span>
+        <div class="fuzzy-track">
+          <div style="width: {{ tidak * 100 }}%"></div>
+        </div>
+        <b>{{ tidak }}</b>
+      </div>
+    </div>
+
+    <a href="/input" class="btn">Ulangi</a>
+    <a href="/" class="btn secondary">Beranda</a>
+    <a href="/learn" class="btn secondary">Pelajari Selengkapnya</a>
+  </div>
+</section>
+
+</body>
+</html>
