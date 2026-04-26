@@ -1,6 +1,6 @@
 # 🌑 BodyBalance — Sistem Fuzzy Mamdani
 
-* **Nama**: Talitha Nashier
+* **Nama**: Talitha Maharani Nashier
 * **NIM**: H1D024098
 * **Shift Baru**: C
 
