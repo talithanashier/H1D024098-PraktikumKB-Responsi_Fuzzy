@@ -1,4 +1,4 @@
-# 🌑 BodyBalance AI — Sistem Fuzzy Mamdani
+# 🌑 BodyBalance — Sistem Fuzzy Mamdani
 
 * **Nama**: Talitha Nashier
 * **NIM**: H1D024098
