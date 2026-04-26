@@ -1,7 +1,5 @@
 # 🌑 BodyBalance AI — Sistem Fuzzy Mamdani
 
-## 📌 Identitas
-
 * **Nama**: Talitha Nashier
 * **NIM**: H1D024098
 * **Shift KRS**: C
